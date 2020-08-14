@@ -1,9 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -19,7 +17,7 @@ public class Main {
         try {
             double purchasePrice = Double.parseDouble(in.readLine());
             double cash = Double.parseDouble(in.readLine());
-            Main.calculateChange(11.25, 20);
+            Main.calculateChange(purchasePrice, cash);
         } catch (Exception e) {
             System.out.println(e);
         }
