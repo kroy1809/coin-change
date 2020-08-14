@@ -1,13 +1,16 @@
 public abstract class Currency {
     private final String denomimation;
     private final double value;
+    private final int count;
 
-    protected Currency(String denomimation, double value) {
+    protected Currency(String denomimation, double value, int count) {
         this.denomimation = denomimation;
         this.value = value;
+        this.count = count;
     }
 
-    public String getDenomimation() {
+    @Override
+    public String toString() {
         return denomimation;
     }
 
@@ -17,68 +20,68 @@ public abstract class Currency {
 }
 
 class OnePence extends Currency{
-    protected OnePence(String denomimation, double value) {
-        super("One Pence", 0.01);
+    public OnePence() {
+        super("One Pence", 0.01, 0);
     }
 }
 
 
 class TwoPence extends Currency{
-    protected TwoPence(String denomimation, double value) {
-        super("Two Pence", 0.02);
+    public TwoPence() {
+        super("Two Pence", 0.02, 0);
     }
 }
 
 class FivePence extends Currency{
-    protected FivePence(String denomimation, double value) {
-        super("Five Pence", 0.05);
+    public FivePence() {
+        super("Five Pence", 0.05, 0);
     }
 }
 
 
 class TenPence extends Currency{
-    protected TenPence(String denomimation, double value) {
-        super("Ten Pence", 0.1);
+    public TenPence() {
+        super("Ten Pence", 0.1, 0);
     }
 }
 
 
 
 class TwentyPence extends Currency{
-    protected TwentyPence(String denomimation, double value) {
-        super("Twenty Pence", 0.2);
+    public TwentyPence() {
+        super("Twenty Pence", 0.2, 0);
     }
 }
 
 
 
 class FiftyPence extends Currency{
-    protected FiftyPence(String denomimation, double value) {
-        super("Fifty Pence", 0.5);
+    public FiftyPence() {
+        super("Fifty Pence", 0.5, 0);
     }
 }
 
 
 
 class OnePound extends Currency{
-    protected OnePound(String denomimation, double value) {
-        super("One Pound", 1.0);
+    public OnePound() {
+        super("One Pound", 1.0, 0);
     }
 }
 
 
 
 class TwoPound extends Currency{
-    protected TwoPound(String denomimation, double value) {
-        super("Two Pound", 2.0);
+    public TwoPound() {
+        super("Two Pound", 2.0, 0);
     }
 }
 
 
 
 class FivePound extends Currency{
-    protected FivePound(String denomimation, double value) {
-        super("Five Pound", 5.0);
+    public FivePound() {
+        super("Five Pound", 5.0, 0);
     }
 }
 
@@ -86,24 +89,24 @@ class FivePound extends Currency{
 
 
 class TenPound extends Currency{
-    protected TenPound(String denomimation, double value) {
-        super("Ten Pound", 10.0);
+    public TenPound() {
+        super("Ten Pound", 10.0, 0);
     }
 }
 
 
 
 class TwentyPound extends Currency{
-    protected TwentyPound(String denomimation, double value) {
-        super("Twenty Pound", 20.0);
+    public TwentyPound() {
+        super("Twenty Pound", 20.0, 0);
     }
 }
 
 
 
 class FiftyPound extends Currency{
-    protected FiftyPound(String denomimation, double value) {
-        super("Fifty Pound", 50.0);
+    public FiftyPound() {
+        super("Fifty Pound", 50.0, 0);
     }
 }
 
